@@ -1,0 +1,296 @@
+*{margin: 0;
+padding: 0;
+font-family: sans-serif;
+}
+/* landing */
+.landing{
+ height: 90vh; 
+ 
+}
+/* about us */
+.aboout-us{
+height: 100% !important;
+margin-top: 6rem !important;
+ position: relative; 
+}
+
+.subtitle{text-align: center!important;
+/* position: relative;  */
+margin-top: 3rem;
+margin-bottom: 2rem;
+font-style: bold;
+font-language-override: normal;
+
+}
+
+.subtitle h1 {font:bolder  !important;
+    font-family: "Roboto Mono", monospace !important; 
+font-size: 2.5rem;
+padding-top: 4rem; 
+padding-bottom: 1rem;
+}
+
+.card-text{
+font-size: .9rem;
+}
+
+.card-right{position: absolute;
+top:14rem;
+left:7rem;
+background-color: white;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.btn {width: 9rem;
+border-radius: 5rem;
+}
+
+.icons{
+    display:flex;
+flex-direction: column;
+justify-content: space-around ;
+padding-top: 0 !important; 
+ padding-bottom: 1rem ; 
+margin-top: 0 !important;
+}
+
+.txt{
+    border-left: dashed grey;
+    padding-left: 1rem ;
+   
+    box-sizing: border-box !important;
+    font-size: small;
+    height: 22rem;
+}
+/* counter */
+.c-icon {
+height: 4rem;
+width: 4rem;
+background-color: white;
+border: none;
+
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important ;
+display: flex;
+align-items: center !important;
+padding-left: .7rem;
+}
+
+.counter-box{
+   
+padding-top: 10rem;
+padding-bottom: 6rem;
+
+}
+/* our services */
+.our-services{
+ background-image:url( "http://dazzlersoftware.com/testwp/munix-pro/wp-content/themes/munix-pro/img/service-bg.jpg");
+ 
+ height: 110vh;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-position: center;
+ 
+}                          
+.opacity{
+background-color: black;
+opacity: .9;
+height: 110vh;
+position: relative;
+}
+
+.our-services .subtitle h1, .subtitle span {
+    color: white; /* Ensure the font color contrasts well with the background */
+}
+.our-services .container {
+    position: relative;
+     width: 50%; 
+    max-width: 400px; /* Optional: Set a maximum width for the card */
+  }
+  
+  
+   .card-services {
+    display: block;
+    
+    width: 100% !important;
+    height: 100%;
+    background-color: none !important; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    overflow: hidden;
+   
+  }
+   .s-icons{
+    display: flex;
+    flex-direction: column;
+   margin-top: 5rem;
+   margin-bottom: 2rem;
+   padding-bottom:2rem;
+    align-items: center !important;
+    
+} 
+.s-icons i{
+padding-bottom: 2rem;
+
+}
+  /* Overlay style */
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-radius: 5px;
+     /* Semi-transparent background */
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  /* Expand the overlay on hover */
+  .container:hover .overlay {
+    height: 100%;
+  }
+  
+  /* Text style in the overlay */
+  .text {
+    color: black;
+    background-color:none;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+
+
+/* our work */
+
+
+.our-work .container {
+  position: relative;
+  width: 50%;
+   max-width: 350px; 
+   padding: 0;
+   margin: 2rem auto;
+  
+}
+
+/* Make the image to responsive */
+.our-work .image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+ .our-work .overlay-img{
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(7, 33, 223, 0.904); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.our-work .container:hover .overlay-img{
+  opacity: 1;
+}
+
+.bg-work{
+background-image: url(../assets/photo_1.jpg);
+height: 100vh;
+width: 100%;
+margin: 4rem 0;
+}
+
+/* our team */
+.our-team{
+height: 130vh;
+width: 100%;
+
+}
+.our-team .row{
+padding: 4rem;
+padding-bottom: 2rem;
+}
+.our-team .row{
+justify-content: center;
+
+}
+.our-team .tmember {
+  position: relative;
+  width: 33%;
+
+}
+
+.our-team.image{
+  display: block;
+  width: 100%;
+  
+
+  
+}
+
+.our-team .overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color:whitesmoke;
+  overflow: hidden;
+  width:17rem;
+  height: 19%;
+  transition: .5s ease;
+}
+
+.tmember:hover .overlay{
+  height: auto;
+ 
+}
+
+.our-team .text{
+  white-space: nowrap; 
+  color:black;
+  font-size: 20px;
+  position: relative;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/* our pricing */
+
+.our-pricing{height: 100vh;
+width: 100%;
+}
+.our-pricing .subtitle{text-align: center!important;
+  /* position: relative;  */
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-style: bold;
+  font-language-override: normal;}
+.our-pricing .subtitle h1, .subtitle span {
+  color: white; /* Ensure the font color contrasts well with the background */
+}
+
+
+
+
+
+
+
+
+
